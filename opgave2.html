@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSTest - Opgave 2</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body onload="MyFunction()">
+
+<div class="w3-bar w3-black">
+	<a href="index.html" class="w3-bar-item w3-button">Home</a>
+	<a href="opgave1.html" class="w3-bar-item w3-button">Opgave 1</a>
+	<a href="opgave2.html" class="w3-bar-item w3-button">Opgave 2</a>
+	<a href="opgave3.html" class="w3-bar-item w3-button">Opgave 3</a>
+	<a href="opgave4.html" class="w3-bar-item w3-button">Opgave 4</a>
+	<a href="opgave5.html" class="w3-bar-item w3-button">Opgave 5</a>
+	<a href="eind.html" class="w3-bar-item w3-button">Eindopdracht</a>
+</div>
+
+<div class="w3-container"> 
+	<h1>Opgave 2</h1>
+	<p>Maak in deze pagina (opgave2.html) een formulier met twee inputs, met id: input1 en input2 en een knop met id: calculate.
+		Zorg dat de knop een functie Calculate() aanroept (schrijf deze hieronder).
+		De functie Calculate() haalt de ingevulde getallen op uit input1 en input2 en vermenigvuldigd deze twee.
+		Het resultaat wordt weggeschreven naar div id='output'.
+	</p>
+
+	<div class="w3-pale-green" id="output"></div>
+</div>
+
+<script>
+
+function MyFunction() {
+	outdiv = document.getElementById('output');
+	outdiv.innerHTML = 'Hier komt het antwoord van de vermenigvuldiging.';
+}
+
+</script>
+
+</body>
+</html>
