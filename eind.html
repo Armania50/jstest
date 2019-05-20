@@ -16,19 +16,22 @@
 </div>
 
 <div class="w3-container"> 
-	<h1>Opgave 5</h1>
+	<h1>Eindopdracht</h1>
 	<p>Maak een rekenmachine in Javascript: 10 knopjes voor de getallen 0-9, 
-		4 knopjes voor / * + - en 1 knopje voor "bereken".
+		4 knopjes voor / * + - en 1 knopje voor "=".
 		Tot slot een input waarin het resultaat wordt neergezet.
 		Het programma werkt zo.<br>
 		<ul>
 			<li>Druk op een getal button, bijvoorbeeld 8</li>
 			<li>Javascript onthoudt "8" in array "waarden", die bevat nu [8]</li>
+			<li>Druk op een operator (+ - / *), bijvoorbeeld +</li>
+			<li>De gekozen operator wordt onthouden in de variabele "operator", die bevat nu '+'</li>
 			<li>Druk op een tweede getal, bijvoorbeeld 3.</li>
 			<li>Javascript onthoudt "3" in array "waarden", die bevat nu [8,3]</li>
-			<li>Klik op een bewerking (bijvoorbeeld +)</li>
-			<li>Javascript neemt de twee getallen 8 en 3, en telt deze bij elkaar op,
-				en print de uitkomst naar de input 'resultaat'.
+			<li>Klik op = </li>
+			<li>Javascript neemt de twee getallen 8 en 3, kijkt welke operator uitgevoerd moet worden,
+				doet de benodigde berekening, print de uitkomst naar de input 'resultaat' en
+				maakt 'waarden' en 'operator' weer leeg.
 			</li>
 		</ul>
 
@@ -40,7 +43,7 @@
 
 function MyFunction() {
 	outdiv = document.getElementById('output');
-	outdiv.innerHTML = '0.';
+	outdiv.innerHTML = '';
 }
 
 </script>

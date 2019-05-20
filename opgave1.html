@@ -4,7 +4,7 @@
 	<title>JSTest - Opgave 1</title>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-<body onload="MyFunction()">
+<body onload="tafel()">
 
 <div class="w3-bar w3-black">
 	<a href="index.html" class="w3-bar-item w3-button">Home</a>
@@ -19,18 +19,19 @@
 
 <div class="w3-container"> 
 	<h1>Opgave 1</h1>
-	<p>Pas de javascript functie MyFunction() aan zodat de tafel van 13 wordt afgedrukt. Je moet hiervoor gebruik maken van een array die je 'tafel' noemt en je hebt een for-lus nodig. Om een nieuwe regel te printen gebruik je: <pre>outdiv.innerHTML += '2' + '&lt;br&gt;';</pre>
+	<p>Pas de javascript functie tafel() aan zodat de tafel van 13 wordt afgedrukt in de 'output' div. Zorg ervoor dat je een getal kan meegeven aan de functie tafel() waarvan de tafel geprint wordt.
 	</p>
 
-	<div class="w3-pale-green" id="output"></div>
+	output: <div class="w3-pale-green" id="output"></div>
 </div>
 
 <script>
 
-function MyFunction() {
+function tafel() {
 	outdiv = document.getElementById('output');
+
+	// zet hier jouw code
 	outdiv.innerHTML += '1' + '<br>';
-	outdiv.innerHTML += '2' + '<br>';
 }
 
 </script>
